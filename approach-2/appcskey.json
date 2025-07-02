@@ -12,5 +12,15 @@
     "value": "true",
     "train": "false",
     "stage": "false"
+  },
+  "launchdarkly:apikey":{
+    "dev":{
+        "value": "https://kv-lab-123.vault.azure.net/secrets/launchdarkly",
+        "type": "kv-reference"
+    },
+    "auto":{
+        "value": "https://kv-auto-123.vault.azure.net/secrets/launchdarkly",
+        "type": "kv-reference"
+    }     
   }
 }

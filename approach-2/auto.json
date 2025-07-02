@@ -27,6 +27,13 @@
             "label": null,
             "content_type": "",
             "tags": {}
+        },
+        {
+            "key": "launchdarkly:apikey",
+            "value": "{\"uri\":\"https://kv-auto-123.vault.azure.net/secrets/launchdarkly\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
         }
     ]
 }
