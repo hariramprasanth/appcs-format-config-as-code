@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "key": "log:level",
+            "value": "info",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "compression:enabled",
+            "value": "false",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        }
+    ]
+}

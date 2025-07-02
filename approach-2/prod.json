@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "key": "log:level",
+            "value": "info",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "enable:applicationinsight",
+            "value": "true",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "compression:enabled",
+            "value": "true",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        }
+    ]
+}
