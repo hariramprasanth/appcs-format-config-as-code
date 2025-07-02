@@ -1,0 +1,6 @@
+{
+  "AppName": "MyApp",
+  "Logging:Level": "Information",
+  "FeatureFlag:NewUI": false,
+  "ApiUrl": "https://api.myapp.com"
+}

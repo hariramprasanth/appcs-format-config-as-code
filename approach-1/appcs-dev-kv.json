@@ -1,0 +1,67 @@
+{
+	"items": [
+		{
+			"key": "ApiUrl",
+			"value": "https://dev.api.myapp.com",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "AppName",
+			"value": "MyApp",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "FeatureFlag:NewUI",
+			"value": "true",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "Logging:Level",
+			"value": "Information",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "api:baseurl",
+			"value": "https://localhost:3000",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "lauchdarkly:ClientId",
+			"value": "12345678-abcd-1234-abcd-1234567890ab",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "launch:client",
+			"value": "{\"uri\":\"https://kv-lab-123.vault.azure.net/secrets/launchdarkly\"}",
+			"label": null,
+			"content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+			"tags": {}
+		},
+		{
+			"key": "log:level",
+			"value": "info",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		},
+		{
+			"key": "sample:key",
+			"value": "@Microsoft.KeyVault(SecretUri=https://kv-lab-123.vault.azure.net/secrets/sample-key/)",
+			"label": null,
+			"content_type": "",
+			"tags": {}
+		}
+	]
+}
