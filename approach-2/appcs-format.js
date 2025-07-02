@@ -45,19 +45,28 @@ function main() {
   const items = [];
 
   for (const key in data) {
-    const entry = data[key];
+    let entry = data[key];
     let value, type;
 
-    if (Object.prototype.hasOwnProperty.call(entry, env)) {
+    // If entry is a string, treat as { value: entry, type: "string" }
+    if (typeof entry === "string") {
+      value = entry;
+      type = "string";
+    } else if (Object.prototype.hasOwnProperty.call(entry, env)) {
+      // If env value is a string, treat as { value: envValue, type: "string" }
       if (entry[env] === null) {
-        // Skip this key for this env
         continue;
       }
-      value = entry[env]?.value;
-      type = entry[env]?.type;
+      if (typeof entry[env] === "string") {
+        value = entry[env];
+        type = "string";
+      } else {
+        value = entry[env]?.value;
+        type = entry[env]?.type || "string";
+      }
     } else if (Object.prototype.hasOwnProperty.call(entry, "value")) {
       value = entry.value;
-      type = entry.type;
+      type = entry.type || "string";
     } else {
       // No default and no env-specific value: skip this key
       continue;

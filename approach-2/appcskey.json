@@ -1,7 +1,6 @@
 {
     "log:level": {
-        "value": "info",
-        "type": "string"
+        "value": "info"
     },
     "launch:darkly": {
         "dev":{
@@ -11,10 +10,8 @@
     },
     "api:baseurl": {
         "value": "https://localhost:3000",
-        "type": "string",
         "dev": {
-            "value": "https://dev.api.myapp.com",
-            "type": "string"
+            "value": "https://dev.api.myapp.com"
         },
         "stage": {
             "value": "https://stage.api.myapp.com",
@@ -25,6 +22,17 @@
             "type": "string"
         },
         "train": null
+    },
+    "appname":"hello",
+    "featureflag:newui": {
+        "value": "true"
+    },
+    "dbuser":{
+        "value": "dbuser",
+        "dev": {
+            "value": "dev-dbuser"
+        },
+        "stage": "stage-dbuser"
     }
     
 }
