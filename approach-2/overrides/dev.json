@@ -1,5 +1,0 @@
-{
-  "FeatureFlag:NewUI": false,
-  "ApiUrl": "https://dev.api.myapp.com",
-  "lauchdarkly:ClientId": "dev-12345678-abcd-1234-abcd-1234567890ab"
-}

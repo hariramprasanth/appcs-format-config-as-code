@@ -1,0 +1,30 @@
+{
+    "log:level": {
+        "value": "info",
+        "type": "string"
+    },
+    "launch:darkly": {
+        "dev":{
+            "type": "kv-reference",
+            "value":"https://kv-lab-123.vault.azure.net/secrets/sample-key"
+        } 
+    },
+    "api:baseurl": {
+        "value": "https://localhost:3000",
+        "type": "string",
+        "dev": {
+            "value": "https://dev.api.myapp.com",
+            "type": "string"
+        },
+        "stage": {
+            "value": "https://stage.api.myapp.com",
+            "type": "string"
+        },
+        "prod": {
+            "value": "https://prod.api.myapp.com",
+            "type": "string"
+        },
+        "train": null
+    }
+    
+}
