@@ -40,8 +40,44 @@ function toKvFormat(key, value, type) {
   };
 }
 
+function showJsonErrorWithLine(raw, err) {
+  const match = err.message.match(/at position (\d+)/);
+  if (match) {
+    const pos = Number(match[1]);
+    const before = raw.slice(0, pos);
+    const line = before.split("\n").length;
+    const col = pos - before.lastIndexOf("\n");
+    console.error(
+      `Invalid JSON at line ${line}, column ${col}: ${err.message}`
+    );
+    // Optionally, print the line with a marker
+    const lines = raw.split("\n");
+    if (lines[line - 1]) {
+      console.error(lines[line - 1]);
+      console.error(" ".repeat(col - 1) + "^");
+    }
+  } else {
+    console.error(`Invalid JSON: ${err.message}`);
+  }
+}
+
 function main() {
-  const data = JSON.parse(fs.readFileSync(inputPath, "utf-8"));
+  let raw;
+  try {
+    raw = fs.readFileSync(inputPath, "utf-8");
+  } catch (err) {
+    console.error(`Error reading input file: ${err.message}`);
+    process.exit(1);
+  }
+
+  let data;
+  try {
+    data = JSON.parse(raw);
+  } catch (err) {
+    showJsonErrorWithLine(raw, err);
+    process.exit(1);
+  }
+
   const items = [];
 
   for (const key in data) {
