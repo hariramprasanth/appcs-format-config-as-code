@@ -12,7 +12,6 @@
 - **Automation:** Enables automated deployment and validation of configuration, reducing manual errors.
 - **Streamlined Collaboration:** Teams can propose, review, and approve configuration changes using pull requests.
 
-
 ## Benefits Over Manual Portal Updates
 
 - **Change Tracking:** Every change is logged and reviewable.
@@ -57,11 +56,46 @@
 - **Script:** A Node.js script reads the CSV and generates one JSON file per environment, appending to existing files if needed.
 - **Key Vault Reference:** If the CSV is for Key Vault references, a flag can be passed to the script to set the correct `content_type` and wrap the value as a `uri`.
 
+#### Advantages
+- Very easy to add or update values for multiple environments.
+- Straightforward for non-developers to edit with spreadsheet tools.
+- Simple to append new values.
+
+#### Disadvantages
+- Readability and editing rely on external CSV editors or extensions.
+- For Key Vault references, a separate CSV/file is usually needed.
+- Not as expressive for complex or nested configuration needs.
+- cant have labels or tags directly in the CSV.
+
 ### 2. Key-Based JSON Approach
 
 - **Input:** A JSON file where each key maps to an object with default and environment-specific values/types.
 - **Script:** A Node.js script reads this JSON and generates the Azure App Configuration format for a specified environment.
 - **Features:** Supports skipping keys for environments where the value is `null` or not defined, and handles both plain values and Key Vault references.
+
+#### Advantages
+- Easy to maintain and extend for developers familiar with JSON.
+- Supports both values and Key Vault references in a single file.
+- More expressive and flexible for complex configuration scenarios.
+- Easier to review changes in code reviews.
+
+#### Disadvantages
+- Requires understanding of the custom JSON format.
+- Less approachable for non-developers compared to CSV.
+
+### Comparison Table
+
+| Feature/Aspect                | CSV-Based Approach                  | Key-Based JSON Approach         |
+|-------------------------------|-------------------------------------|---------------------------------|
+| **Ease of editing**           | High (with spreadsheet tools)       | High for developers             |
+| **Supports Key Vault refs**   | Needs separate file/flag            | Native, in same file            |
+| **Readability**               | Good in spreadsheet, less in raw    | Good in code editors            |
+| **Extensibility**             | Limited to flat key-value , cant have labels, content type,tags       | Flexible, can support labels,content type,tags  |
+| **Non-dev friendly**          | Yes                                 | No                              |
+| **Change tracking**           | Yes                                 | Yes                             |
+| **Adding new keys**           | Easy                                | Easy                            |
+| **Complex config**            | Hard                                | Easy                            |
+| **Requires format knowledge** | Minimal                             | Yes (for custom JSON)           |
 
 ## Example Workflow
 
@@ -69,5 +103,6 @@
 2. **Run the generation script** to produce environment-specific JSON files.
 3. **Review and commit** the generated files.
 4. **Deploy** the configuration to Azure App Configuration using automation or manual upload.
+
 
 
