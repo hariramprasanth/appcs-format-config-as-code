@@ -1,0 +1,3 @@
+keys,dev,auto,test,stage,train,prod
+abc:db-password,https://kv-dev-123.vault.azure.net/secrets/db-password,https://kv-auto-123.vault.azure.net/secrets/db-password,https://kv-test-123.vault.azure.net/secrets/db-password,https://kv-stage-123.vault.azure.net/secrets/db-password,https://kv-train-123.vault.azure.net/secrets/db-password,https://kv-prod-123.vault.azure.net/secrets/db-password
+AD:Client-secret,https://kv-dev-123.vault.azure.net/secrets/ad-client,https://kv-auto-123.vault.azure.net/secrets/ad-client,https://kv-test-123.vault.azure.net/secrets/ad-client,https://kv-stage-123.vault.azure.net/secrets/ad-client,https://kv-train-123.vault.azure.net/secrets/ad-client,https://kvprod-123.vault.azure.net/secrets/ad-client

@@ -1,6 +1,20 @@
 {
     "items": [
         {
+            "key": "abc:db-password",
+            "value": "{\"uri\":\"https://kv-train-123.vault.azure.net/secrets/db-password\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
+            "key": "AD:Client-secret",
+            "value": "{\"uri\":\"https://kv-train-123.vault.azure.net/secrets/ad-client\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
             "key": "api:baseurl",
             "value": "trainurl",
             "label": null,
@@ -12,6 +26,20 @@
             "value": "Server=tcp:abcdev-897-sqlmi.aaaaa.database.windows.net,8888;Initial Catalog=ABC_ABC;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication='Active Directory Default';",
             "label": null,
             "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "abc:db-password",
+            "value": "{\"uri\":\"https://kv-train-123.vault.azure.net/secrets/db-password\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
+            "key": "AD:Client-secret",
+            "value": "{\"uri\":\"https://kv-train-123.vault.azure.net/secrets/ad-client\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
             "tags": {}
         }
     ]

@@ -1,10 +1,38 @@
 {
     "items": [
         {
+            "key": "abc:db-password",
+            "value": "{\"uri\":\"https://kv-prod-123.vault.azure.net/secrets/db-password\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
+            "key": "AD:Client-secret",
+            "value": "{\"uri\":\"https://kvprod-123.vault.azure.net/secrets/ad-client\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
             "key": "api:baseurl",
             "value": "produrl",
             "label": null,
             "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "abc:db-password",
+            "value": "{\"uri\":\"https://kv-prod-123.vault.azure.net/secrets/db-password\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
+            "tags": {}
+        },
+        {
+            "key": "AD:Client-secret",
+            "value": "{\"uri\":\"https://kvprod-123.vault.azure.net/secrets/ad-client\"}",
+            "label": null,
+            "content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
             "tags": {}
         }
     ]
