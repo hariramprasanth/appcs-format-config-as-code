@@ -11,6 +11,7 @@
 - **Consistency:** Configuration can be reviewed, tested, and promoted through environments using the same processes as code.
 - **Automation:** Enables automated deployment and validation of configuration, reducing manual errors.
 - **Streamlined Collaboration:** Teams can propose, review, and approve configuration changes using pull requests.
+- **Environment Traceability:** In setups with multiple environments (Dev, Test, Prod), it’s easy to lose track of manual updates made through the portal. With configuration as code, every change is reviewed via pull requests and committed to source control — ensuring full visibility and accountability across environments.
 
 ## Benefits Over Manual Portal Updates
 
