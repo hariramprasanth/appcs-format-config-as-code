@@ -2,14 +2,7 @@
     "items": [
         {
             "key": "api:baseurl",
-            "value": "autourl",
-            "label": null,
-            "content_type": "",
-            "tags": {}
-        },
-        {
-            "key": "MyDatabase:ConnectionString",
-            "value": "Database={OperationsDatabase:DatabaseName};Server={OperationsDatabase:ServerName};User Id={OperationsDatabase:UserName};Password={OperationsDatabase:Password};{OperationsDatabase:ConnectionOptions}",
+            "value": "trainurl",
             "label": null,
             "content_type": "",
             "tags": {}

@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "key": "api:baseurl",
+            "value": "stageurl",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "AD_SCOPES",
+            "value": "openid,profile,email,offline_access,api://abcjashfksbvvksgvsd-g/user_impersonation",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        }
+    ]
+}

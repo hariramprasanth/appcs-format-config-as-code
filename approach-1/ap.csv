@@ -1,3 +1,4 @@
+keys,dev,auto,test,stage,train,prod
 api:baseurl,devurl,autourl,testurl,stageurl,trainurl,produrl
 AD_SCOPES,"openid,profile,email,offline_access,api://abcjashfksbvvksgvsd-g/user_impersonation",,,"openid,profile,email,offline_access,api://abcjashfksbvvksgvsd-g/user_impersonation",,
 Firebase:Principal:Name,firebase-adminsdk-fbsvc@my-ios-nprod.iam.gserviceaccount.com,,,,,

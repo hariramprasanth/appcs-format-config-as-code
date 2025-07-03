@@ -1,67 +1,39 @@
 {
-	"items": [
-		{
-			"key": "ApiUrl",
-			"value": "https://dev.api.myapp.com",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "AppName",
-			"value": "MyApp",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "FeatureFlag:NewUI",
-			"value": "true",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "Logging:Level",
-			"value": "Information",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "api:baseurl",
-			"value": "https://localhost:3000",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "lauchdarkly:ClientId",
-			"value": "12345678-abcd-1234-abcd-1234567890ab",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "launch:client",
-			"value": "{\"uri\":\"https://kv-lab-123.vault.azure.net/secrets/launchdarkly\"}",
-			"label": null,
-			"content_type": "application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8",
-			"tags": {}
-		},
-		{
-			"key": "log:level",
-			"value": "info",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		},
-		{
-			"key": "sample:key",
-			"value": "@Microsoft.KeyVault(SecretUri=https://kv-lab-123.vault.azure.net/secrets/sample-key/)",
-			"label": null,
-			"content_type": "",
-			"tags": {}
-		}
-	]
+    "items": [
+        {
+            "key": "api:baseurl",
+            "value": "devurl",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "AD_SCOPES",
+            "value": "openid,profile,email,offline_access,api://abcjashfksbvvksgvsd-g/user_impersonation",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "Firebase:Principal:Name",
+            "value": "firebase-adminsdk-fbsvc@my-ios-nprod.iam.gserviceaccount.com",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "MyDatabase:ConnectionString",
+            "value": "Database={OperationsDatabase:DatabaseName};Server={OperationsDatabase:ServerName};User Id={OperationsDatabase:UserName};Password={OperationsDatabase:Password};{OperationsDatabase:ConnectionOptions}",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        },
+        {
+            "key": "Database:MyDB:Connection",
+            "value": "Server=tcp:abcdev-897-sqlmi.aaaaa.database.windows.net,8888;Initial Catalog=ABC_ABC;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication='Active Directory Default';",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        }
+    ]
 }

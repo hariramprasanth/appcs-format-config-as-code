@@ -1,0 +1,11 @@
+{
+    "items": [
+        {
+            "key": "api:baseurl",
+            "value": "testurl",
+            "label": null,
+            "content_type": "",
+            "tags": {}
+        }
+    ]
+}
